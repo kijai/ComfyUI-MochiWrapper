@@ -205,7 +205,7 @@ class MochiSampler:
                 "num_frames": ("INT", {"default": 49, "min": 7, "max": 1024, "step": 6}),
                 "steps": ("INT", {"default": 50, "min": 2}),
                 "cfg": ("FLOAT", {"default": 4.5, "min": 0.0, "max": 30.0, "step": 0.01}),
-                "seed": ("INT", {"default": 0, "min": 0, "max": 0xffffffffffffffff}),
+                "seed": ("INT", {"default": 0, "min": 0, "max": 2**32 - 1}),
             },
         }
 
